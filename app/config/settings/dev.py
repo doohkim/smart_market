@@ -18,7 +18,7 @@ WSGI_APPLICATION = 'config.wsgi.dev.application'
 # Static files (CSS, JavaScript)
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(ROOT_DIR, 'staticfiles')
-
+STATICFILES_DIRS = [ os.path.join(BASE_DIR, 'static'), ]
 # Media Files (Images, i.e. User Uploads)
 MEDIA_ROOT = os.path.join(ROOT_DIR, '.media')
 MEDIA_URL = '/media/'
@@ -27,6 +27,6 @@ ALLOWED_HOSTS += [
     '*',
 ]
 
-INSTALLED_APPS += [
-    'django_extensions',
-]
+# INSTALLED_APPS += [
+#     'django_extensions',
+# ]

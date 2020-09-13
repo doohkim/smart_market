@@ -4,7 +4,7 @@ from django.db import models
 
 class User(AbstractUser):
     # profile_img = models.ImageField(
-    #     upload_to=, blank=True, help_text='프로필 사진')
+    #     upload_to='user/img/', blank=True, help_text='프로필 사진')
     phone = models.CharField(
         max_length=13, help_text='핸드폰 번호', blank=True)
     address = models.TextField(help_text='주소')

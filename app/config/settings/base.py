@@ -14,10 +14,10 @@ import os
 import json
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# print('BASE_DIR:', BASE_DIR)
 ROOT_DIR = os.path.dirname(BASE_DIR)
-
+# print('ROOT_DIR', ROOT_DIR)
 # with open(os.path.join(ROOT_DIR, 'secrets.json')) as json_file:
 #     SECRETS_FULL = json.load(json_file)
 #     SECRETS_BASE = SECRETS_FULL['base']
@@ -65,7 +65,6 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'config.urls'
-
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
